@@ -1,5 +1,6 @@
  interface product { id: number; title: string; 
   image:string;
+  price:number;
   description: string,
  }
 
@@ -25,6 +26,10 @@ async function Details({ params }: { params: Promise<{ id: string }> }) {
       <h1 className ="text-5xl font-bold">{product.title}</h1>
       <p className="py-6">
        {product.description}
+      </p>
+      <p className="py-1 text-blue-500">
+        {product.price}
+
       </p>
       <button className="btn btn-primary">By Now</button>
     </div>

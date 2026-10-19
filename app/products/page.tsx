@@ -1,7 +1,9 @@
 import Link from "next/link";
 
  interface product { id: number; title: string; 
-  description: string,
+  image:string;
+  price:number
+  description: string
   
 }
 
